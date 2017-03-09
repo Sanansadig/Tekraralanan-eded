@@ -1,0 +1,35 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+    var eded =[1,3,4,5,2,5,7,11,34,22,11,33,44,23,45,56,2,44,3,5,7,4,4,4,4,4,1]
+    // document.write (eded.length)
+    var ferq=0;
+    var a=1;
+    var array = [];
+    for (var i=0; i<eded.length; i++) {
+        for (var j=i+1;j<eded.length; j++ ) {
+            ferq=eded[i] - eded[j]; 
+            if (ferq==0) {
+                a++;}
+            // document.write (eded[i] + ":" +eded[j])}
+            // document.write (ferq +"<hr>"); 
+            // document.write( "|" + a + "|");
+         
+
+        }
+            array.push([eded[i],a])
+            // document.write ("<hr>")
+            a=1;
+    }
+   console.log (array);
+
+   // menden bu qeder :), eger console girsez , ucuncu ededin yeni 4 -un 6 defe tekrar olundugunu gore bileceksiz :) //
+   
+    </script>
+</body>
+
+</html>
